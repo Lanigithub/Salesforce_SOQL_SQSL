@@ -13,3 +13,7 @@
 * ### Execute SOQL queries embedded in Apex by using Anonymous Apex.
 * ### Query related records.
 ***
+4. **Fourth question in bold**
+| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
+|:--------------|:-------------:|--------------:|
+| text-align left | text-align center | text-align right |
