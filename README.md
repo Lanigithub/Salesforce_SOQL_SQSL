@@ -33,7 +33,7 @@
 ***
 ### 4. **Write SOSL Queries** 
 (https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_sosl?trailmix_creator_id=melwo&trailmix_slug=apex-learning)
-***
+
 * #### Learning Objectives
 * #### After completing this unit, you'll be able to:
 * #### Describe the differences between SOSL and SOQL.
