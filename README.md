@@ -1,4 +1,4 @@
-# Salesforce SOQL VS. SQSL
+# SOQL VS. SQSL in Salesforce
 ## SOQL: Salesforce Object Query Language,  you can use to read/query saved records or objects in salesforce **_Query Editor_**. SOQL is similar to the standard SQL language but is customized for the Lightning Platform and it is only for querying purpose (SELECT) and not for modifying statements. 
 ### Difference between SQL and SOQL: In SQL, the data is stored in database tables whereas the data in Salesforce is stored in the form of objects.
 ### SOQL is used primarily for querying the Salesforce database and retrieving the records. It does not allow data modifying statements like UPDATE, INSERT, etc. 
