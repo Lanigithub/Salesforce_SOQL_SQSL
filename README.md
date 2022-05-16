@@ -2,7 +2,7 @@
 ### 1. SOQL: Salesforce Object Query Language,  you can use to read/query saved records or objects in salesforce **_Query Editor_**. SOQL is similar to the standard SQL language but is customized for the Lightning Platform and it is only for querying purpose (SELECT) and not for modifying statements. 
 ### Difference between SQL and SOQL: In SQL, the data is stored in database tables whereas the data in Salesforce is stored in the form of objects.
 ### SOQL is used primarily for querying the Salesforce database and retrieving the records. It does not allow data modifying statements like UPDATE, INSERT, etc. 
-### To update or insert multiple records in the Salesforce database, it needs to be done using Salesforce's user interface or DML statements.
+### To update or insert multiple records in the Salesforce database, it needs to be done using Salesforce's user interface or DML statements: insert, update, upsert,delete, undelete
 
 ### 2. SOSL: Salesforce Object Search Language (SOSL) is a Salesforce search language that is used to perform text searches in records. Use SOSL to search **_fields across multiple standard and custom object records_** in Salesforce. SOSL is similar to Apache Lucene.
 ((https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_sosl?trailmix_creator_id=melwo&trailmix_slug=apex-learning)
