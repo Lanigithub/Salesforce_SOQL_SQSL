@@ -1,6 +1,6 @@
 // SOQL: Salesforce Objects Query Languange: answer or find the results for any questions from 
 //the salesforce Objects: Account, Contact, Lead,Campaign, ServiceContact, Case etc from the Developer Console->file->Open resource
-//to search the objects. you write SOQL querries on the  Query Editor(case insensitive)
+//to search the objects. you write SOQL queries on the  Query Editor(case insensitive)
 
 
 // Question 1: find the name and phone number from the accounts that the BillingState is in California
