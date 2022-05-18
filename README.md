@@ -30,6 +30,22 @@
 * #### Execute SOQL queries by using the Query Editor in the Developer Console.
 * #### Execute SOQL queries embedded in Apex by using Anonymous Apex.
 * #### Query related records.
+* #### SOQL Syntax: Select fields IN SObejects( Account, Contact Opportunity, Leads) WHERE condition LIMIT n 
+* Example:
+```
+Question 3: find out the name, phone number and Email from Contact with a name start with John or L
+
+
+SELECT Name, Phone  FROM Contact WHERE (Name LIKE 'John%' OR Name like 'L%' ) ORDER BY Name LIMIT 2
+
+Find all SFDC Computing accounts and all accounts with more than 25 employees whose billing city is Los Angeles
+
+SELECT Name, Phone, industry NumberOfEmployees FROM Account WHERE (Name='SFDC Computing' OR (NumberOfEmployees > 25 AND BillingCity='Los Angeles') ORDER BY Name )
+
+
+// Return 0 records
+
+```
 ***
 ### 4. **Write SOSL Queries** 
 (https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_sosl?trailmix_creator_id=melwo&trailmix_slug=apex-learning)
