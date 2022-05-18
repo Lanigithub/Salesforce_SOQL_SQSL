@@ -31,7 +31,7 @@ SELECT Name, Phone, industry NumberOfEmployees FROM Account WHERE (Name='SFDC Co
 
 // Return 0 records
 
-// Question 5: find out  5 Opportunity name, account name  ID, Stage from all the Opportunies with amount greater than 15,000 using format()
+// Question 5: find out  Opportunity name,  ID, Stage from all the Opportunies with amount greater than 15,000 using format()
 
 SELECT name, Id, isWon, LastModifiedDate, FORMAT(LastModifiedDate) formattedDate FROM Opportunity WHERE Amount > 15000 LIMIT 5
 
