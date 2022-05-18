@@ -39,7 +39,18 @@
 * #### Describe the differences between SOSL and SOQL.
 * #### Search for fields across multiple objects using SOSL queries.
 * #### Execute SOSL queries by using the Query Editor in the Developer Console.
+* #### Sytax of SOSL: FIND {SearchQuery} IN SearchGroup RETURNING Objects(Fields)
+* #### The search query in the Query Editor and the API must be enclosed within curly brackets ({Wingo}). In contrast, in Apex the search query is enclosed within single quotes ('Wingo').
+* #### Example: 
+```
+Query 2: search for account name and Contact with FirstName, LastName and Department as the fields that have any fields with the word {Wingo}
+
+FIND {Wingo} IN ALL FIELDS RETURNING Account(Name), Contact(FirstName, LastName, Department)
+
+// Returning one contact with'Wingo'
+```
 ***
+
 ### 5. SOQL and SOSL References: 
 
 https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql_sosl_intro.htm
