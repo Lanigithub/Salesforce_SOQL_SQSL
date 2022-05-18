@@ -1,0 +1,22 @@
+// When SOSL is embedded in Apex, it is referred to as inline SOSL
+// Write SOSL in the Query Editor or lighting.force.com
+// Syntax on Query Editor:  FIND ....RETURNING   FIND {SearchQuery} IN SearchGroup RETURNING Objects(Fields)
+// Find {SFDC} IN ALL FIELDS RETURNING Acount(Name), Contact ( FirstName, LastName)
+
+// Query 1: write a list search for accounts and contacts that have any fields with the word 'SFDC'.
+
+
+Find {SFDC} IN ALL FIELDS RETURNING Account(Name), Contact(FirstName, LastName)
+
+// Returning two accounts: SFDC Computing and The SFDC Query Man and one Contact First name: Carol LastName: Ruiz
+// The same as seaching at the force.com
+
+// Embeddded in Apex:  List<List<SObject>> searchList = [FIND 'SFDC' IN ALL FIELDS 
+ //                                     RETURNING Account(Name), Contact(FirstName,LastName)];
+
+
+// Query 2: search for account name and Contact with FirstName, LastName and Department as the fields that have any fields with the word {Wingo}
+
+FIND {Wingo} IN ALL FIELDS RETURNING Account(Name), Contact(FirstName, LastName, Department)
+
+// Returning one contact with'Wingo'
