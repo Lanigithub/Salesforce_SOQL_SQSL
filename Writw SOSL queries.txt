@@ -20,3 +20,15 @@ Find {SFDC} IN ALL FIELDS RETURNING Account(Name), Contact(FirstName, LastName)
 FIND {Wingo} IN ALL FIELDS RETURNING Account(Name), Contact(FirstName, LastName, Department)
 
 // Returning one contact with'Wingo'
+
+// Query 3: Search with wildCard {Wing*}
+
+FIND {Wing*} IN ALL FIELDS RETURNING Account(Name,Phone), Contact(FirstName,LastName,Phone,Department)
+
+// Returning one account and one contact 
+
+//Query 4: Search fields in SObject Opportunity with keyword {EDge}
+
+FIND {EDge} IN ALL FIELDS RETURNING Account(Name), Opportunity(Name, Type, Amount, CurrentGenerators__c, isWon)
+
+// Returning 1 account and 4 opportunities 
