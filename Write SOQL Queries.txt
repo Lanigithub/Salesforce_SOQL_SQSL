@@ -1,0 +1,37 @@
+// SOQL: Salesforce Objects Query Languange: answer or find the results for any questions from 
+//the salesforce Objects: Account, Contact, Lead,Campaign, ServiceContact, Case etc from the Developer Console->file->Open resource
+//to search the objects. you write SOQL querries on the  Query Editor(case insensitive)
+
+
+// Question 1: find the name and phone number from the accounts that the BillingState is in California
+
+
+SELECT Name, Phone FROM Account WHERE BillingState = 'CA'
+
+
+// Question 2: find the name, phone number, industry and Number of Employees from the Account with number of employees more than 100
+
+
+SELECT Name, Phone, industry NumberOfEmployees FROM Account WHERE NumberOfEmployees > 100 ORDER BY Name 
+
+// No punctuation before ORDER BY
+
+
+// Question 3: find out the name, phone number and Email from Contact with a name start with John or L
+
+
+SELECT Name, Phone  FROM Contact WHERE (Name LIKE 'John%' OR Name like 'L%' ) ORDER BY Name LIMIT 2
+
+
+
+// Question 4: All SFDC Computing accounts and all accounts with more than 25 employees whose billing city is Los Angeles
+
+SELECT Name, Phone, industry NumberOfEmployees FROM Account WHERE (Name='SFDC Computing' OR (NumberOfEmployees > 25 AND BillingCity='Los Angeles') ORDER BY Name )
+
+
+// Return 0 records
+
+
+// Question 5 query 
+
+
