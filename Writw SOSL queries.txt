@@ -11,7 +11,7 @@ Find {SFDC} IN ALL FIELDS RETURNING Account(Name), Contact(FirstName, LastName)
 // Returning two accounts: SFDC Computing and The SFDC Query Man and one Contact First name: Carol LastName: Ruiz
 // The same as seaching at the force.com
 
-// Embeddded in Apex:  List<List<SObject>> searchList = [FIND 'SFDC' IN ALL FIELDS 
+// Embeddded in Apex:  List<List<sObject>> searchList = [FIND 'SFDC' IN ALL FIELDS 
  //                                     RETURNING Account(Name), Contact(FirstName,LastName)];
 
 
