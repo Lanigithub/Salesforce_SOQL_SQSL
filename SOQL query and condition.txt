@@ -35,6 +35,10 @@ SELECT Name, Phone, industry NumberOfEmployees FROM Account WHERE (Name='SFDC Co
 
 SELECT name, Id, isWon, LastModifiedDate, FORMAT(LastModifiedDate) formattedDate FROM Opportunity WHERE Amount > 15000 LIMIT 5
 
+// Question 6: find out opportunity name, amount greater than 1000 and associated account with numbmbers of employees greater 1000
+
+SELECT name, amount, Account.NumberofEmployees FROM opportunity WHERE  Amount>1000 AND Account.NumberofEmployees>1000
+
 
 
 
